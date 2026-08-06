@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Noyon's website ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<!-- ===================================== -->
+<!-- SECRET DOOR -->
+<!-- ===================================== -->
+
+<div id="doorOverlay" class="hiddenDoor">
+
+    <h2>🔐 A Secret Door</h2>
+
+    <div class="door" id="secretDoor"></div>
+<div id="doorLight"></div>         
+    <p>Tap the door to continue ❤️</p>
+
+</div>
+<div id="flash"></div>
+<!-- Background Music -->
+
+<audio id="bgMusic" loop>
+
+    <source src="assets/audio/bg.mp3" type="audio/mpeg">
+
+</audio>
+<audio id="doorSound">
+
+    <source src="assets/audio/door.mp3" type="audio/mpeg">
+
+</audio>
+<!-- AI Scan Sound -->
+<audio id="scanSound">
+    <source src="assets/audio/scan.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Popup Sound -->
+<audio id="popupSound">
+    <source src="assets/audio/popup.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Click Sound -->
+<audio id="clickSound">
+    <source src="assets/audio/click.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Letter Sound -->
+<audio id="letterSound">
+    <source src="assets/audio/letter.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Heartbeat -->
+<audio id="heartSound" loop>
+    <source src="assets/audio/heartbeat.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Typing Sound -->
+<audio id="typingSound">
+    <source src="assets/audio/typing.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Success Sound -->
+<audio id="successSound">
+    <source src="assets/audio/success.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Final Sound -->
+<audio id="finalSound">
+    <source src="assets/audio/final.mp3" type="audio/mpeg">
+</audio>
+<!-- Music Button -->
+
+<button id="musicBtn">
+
+    🔇
+
+</button>
+<body class="blue">
+
+    <!-- Floating Hearts -->
+    <div id="heartContainer"></div>
+
+    <!-- Main App -->
+
+    <div id="app">
+
+        <!-- Progress -->
+
+        <div id="progress">
+
+            <div id="progressFill"></div>
+
+        </div>
+
+        <!-- Screen -->
+
+        <div id="screen"></div>
+
+    </div>
+
+    <!-- Premium Popup -->
+
+    <div id="popupOverlay" class="hidden">
+
+        <div id="popup">
+
+            <div id="popupIcon">
+
+                ⚠️
+
+            </div>
+
+            <h2 id="popupTitle">
+
+                Warning
+
+            </h2>
+
+            <p id="popupMessage">
+
+                Message
+
+            </p>
+
+            <button id="popupBtn">
+
+                OK
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Heart Burst -->
+
+    <div id="burstContainer"></div>
+
+    <script src="config.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

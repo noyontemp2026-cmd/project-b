@@ -1,0 +1,970 @@
+/* ====================================== */
+/* RESET */
+/* ====================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:
+    "Segoe UI",
+    sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    transition:.5s;
+
+    color:white;
+
+}
+
+/* ====================================== */
+/* THEMES */
+/* ====================================== */
+
+body.blue{
+    background:#1E3A8A;
+}
+
+body.purple{
+    background:#6D28D9;
+}
+
+body.pink{
+    background:#DB2777;
+}
+
+body.orange{
+    background:#EA580C;
+}
+
+body.red{
+    background:#B91C1C;
+}
+body.yellow{
+    background:#2ce810;
+}
+body.black{
+    background:#6f26dc;
+}
+/* ====================================== */
+/* APP */
+/* ====================================== */
+
+#app{
+
+    width:92%;
+
+    max-width:430px;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+/* ====================================== */
+/* PROGRESS */
+/* ====================================== */
+
+#progress{
+
+    width:100%;
+
+    height:8px;
+
+    background:
+
+    rgba(255,255,255,.2);
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    margin-bottom:18px;
+
+}
+
+#progressFill{
+
+    width:0;
+
+    height:100%;
+
+    background:white;
+
+    transition:.4s;
+
+}
+
+/* ====================================== */
+/* GLASS CARD */
+/* ====================================== */
+
+#screen{
+
+    background:
+
+    rgba(255,255,255,.12);
+
+    backdrop-filter:
+
+    blur(18px);
+
+    border-radius:26px;
+
+    padding:
+
+    35px 22px;
+
+    text-align:center;
+
+    animation:
+
+    fade .35s;
+
+    box-shadow:
+
+    0 18px 45px
+
+    rgba(0,0,0,.25);
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+        translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+        translateY(0);
+
+    }
+
+}
+
+/* ====================================== */
+/* TEXT */
+/* ====================================== */
+
+h1{
+
+    font-size:38px;
+
+    margin-bottom:14px;
+
+}
+
+h4{
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+.question{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    line-height:1.5;
+
+    margin:
+
+    30px 0;
+
+}
+
+.final-title{
+
+    font-size:40px;
+
+    line-height:1.4;
+
+}
+
+/* ====================================== */
+/* INPUT */
+/* ====================================== */
+
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin:22px 0;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:16px;
+
+    font-size:18px;
+
+}
+
+/* ====================================== */
+/* BUTTONS */
+/* ====================================== */
+
+.buttons{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:25px;
+
+    position:relative;
+
+}
+
+button{
+
+    flex:1;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:16px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+button:active{
+
+    transform:scale(.95);
+
+}
+
+#yesBtn{
+
+    background:#22C55E;
+
+    color:white;
+
+}
+
+#noBtn{
+
+    background:#EF4444;
+
+    color:white;
+
+    position:relative;
+
+}
+/* ====================================== */
+/* POPUP */
+/* ====================================== */
+
+.hidden{
+    display:none !important;
+}
+
+#popupOverlay{
+
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(8px);
+
+    z-index:999;
+
+}
+
+#popup{
+
+    width:90%;
+    max-width:340px;
+
+    background:white;
+
+    color:#222;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    text-align:center;
+
+    animation:popup .25s ease;
+
+    box-shadow:
+    0 20px 50px
+    rgba(0,0,0,.35);
+
+}
+
+@keyframes popup{
+
+    from{
+
+        opacity:0;
+        transform:
+        scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:
+        scale(1);
+
+    }
+
+}
+
+#popupIcon{
+
+    font-size:55px;
+
+    margin-bottom:15px;
+
+}
+
+#popup h2{
+
+    margin-bottom:12px;
+
+}
+
+#popup p{
+
+    line-height:1.6;
+
+    margin-bottom:22px;
+
+    font-size:17px;
+
+}
+
+#popupBtn{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+/* ====================================== */
+/* FLOATING HEARTS */
+/* ====================================== */
+
+#heartContainer{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:1;
+
+}
+
+.heart{
+
+    position:absolute;
+
+    bottom:-40px;
+
+    animation:
+
+    floatHeart linear forwards;
+
+    opacity:.8;
+
+}
+
+@keyframes floatHeart{
+
+    0%{
+
+        transform:
+        translateY(0)
+        scale(.5);
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:.9;
+
+    }
+
+    100%{
+
+        transform:
+        translateY(-120vh)
+        scale(1.4)
+        rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ====================================== */
+/* HEART BURST */
+/* ====================================== */
+
+#burstContainer{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:999;
+
+}
+
+.burstHeart{
+
+    position:absolute;
+
+    animation:
+
+    burst .9s ease-out forwards;
+
+}
+
+@keyframes burst{
+
+    from{
+
+        opacity:1;
+
+        transform:
+        translate(0,0)
+        scale(.5);
+
+    }
+
+    to{
+
+        opacity:0;
+
+        transform:
+
+        translate(
+
+        var(--x),
+
+        var(--y)
+
+        )
+
+        scale(1.8);
+
+    }
+
+}
+
+/* ====================================== */
+/* MOBILE */
+/* ====================================== */
+
+@media(max-width:430px){
+
+    h1{
+
+        font-size:32px;
+
+    }
+
+    h4{
+
+        font-size:22px;
+
+    }
+
+    .question{
+
+        font-size:26px;
+
+    }
+
+    button{
+
+        font-size:17px;
+
+        padding:15px;
+
+    }
+
+}
+/* ====================================== */
+/* LOVE LETTER */
+/* ====================================== */
+
+#letterBox{
+
+    margin-top:25px;
+
+    padding:22px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    text-align:left;
+
+    min-height:260px;
+
+    line-height:1.9;
+
+    font-size:18px;
+
+    white-space:pre-wrap;
+
+    box-shadow:
+    0 15px 35px
+    rgba(0,0,0,.2);
+
+}
+
+#letterText{
+
+    word-break:break-word;
+
+}
+
+/* ====================================== */
+/* HEART RAIN */
+/* ====================================== */
+
+.rainHeart{
+
+    position:fixed;
+
+    top:-40px;
+
+    z-index:999;
+
+    pointer-events:none;
+
+    animation:heartRain linear forwards;
+
+}
+
+@keyframes heartRain{
+
+    from{
+
+        transform:
+
+        translateY(0)
+
+        rotate(0deg);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:
+
+        translateY(120vh)
+
+        rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ====================================== */
+/* FLASH EFFECT */
+/* ====================================== */
+
+#flash{
+
+    position:fixed;
+
+    inset:0;
+
+    background:white;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+}
+
+.flash{
+
+    animation:cameraFlash .4s;
+
+}
+
+@keyframes cameraFlash{
+
+    0%{
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+    }
+
+}
+
+/* ====================================== */
+/* HEART BEAT */
+/* ====================================== */
+
+.beat{
+
+    animation:beat 1s infinite;
+
+}
+
+@keyframes beat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    30%{
+
+        transform:scale(1.12);
+
+    }
+
+    60%{
+
+        transform:scale(.96);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+/* ====================================== */
+/* MUSIC BUTTON */
+/* ====================================== */
+
+#musicBtn{
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(12px);
+
+    color:white;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    z-index:9999;
+
+    box-shadow:
+    0 8px 25px
+    rgba(0,0,0,.25);
+
+    transition:.3s;
+
+}
+
+#musicBtn:hover{
+
+    transform:
+    scale(1.08);
+
+    background:
+    rgba(255,255,255,.28);
+
+}
+
+#musicBtn:active{
+
+    transform:
+    scale(.92);
+
+}
+
+/* Mobile */
+
+@media(max-width:430px){
+
+    #musicBtn{
+
+        width:50px;
+
+        height:50px;
+
+        font-size:22px;
+
+        top:15px;
+
+        right:15px;
+
+    }
+
+}
+/* ====================================== */
+/* SECRET DOOR */
+/* ====================================== */
+
+#doorOverlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#111827;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:10000;
+
+    transition:.8s;
+
+}
+
+.hiddenDoor{
+
+    display:none !important;
+
+}
+
+.door{
+
+    width:180px;
+
+    height:300px;
+
+    background:linear-gradient(135deg,#7B4A12,#4B2E08);
+
+    border-radius:12px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
+
+    transition:transform 1.2s;
+
+    transform-origin:left center;
+
+}
+
+.door::before{
+
+    content:"";
+
+    width:16px;
+
+    height:16px;
+
+    border-radius:50%;
+
+    background:#FFD54A;
+
+    position:absolute;
+
+    right:18px;
+
+    top:50%;
+
+}
+
+.door.open{
+
+    transform:
+    perspective(800px)
+    rotateY(-105deg);
+
+}
+
+#doorOverlay h2{
+
+    margin-bottom:30px;
+
+    font-size:28px;
+
+}
+
+#doorOverlay p{
+
+    margin-top:25px;
+
+    opacity:.8;
+
+}
+/* ====================================== */
+/* DOOR LIGHT EFFECT */
+/* ====================================== */
+
+#doorLight{
+
+    position:absolute;
+
+    width:260px;
+
+    height:360px;
+
+    background:radial-gradient(
+
+        circle,
+
+        rgba(80,180,255,.95) 0%,
+
+        rgba(80,180,255,.45) 40%,
+
+        transparent 80%
+
+    );
+
+    opacity:0;
+
+    filter:blur(25px);
+
+    transition:1.2s;
+
+    pointer-events:none;
+
+}
+
+#doorLight.active{
+
+    opacity:1;
+
+    transform:scale(1.5);
+
+}
+
+#doorOverlay{
+
+    overflow:hidden;
+
+}
+/* ====================================== */
+/* SCREEN SHAKE */
+/* ====================================== */
+
+.shake{
+
+    animation:screenShake .45s;
+
+}
+
+@keyframes screenShake{
+
+    0%{transform:translate(0,0);}
+    15%{transform:translate(-6px,2px);}
+    30%{transform:translate(6px,-2px);}
+    45%{transform:translate(-5px,3px);}
+    60%{transform:translate(5px,-3px);}
+    75%{transform:translate(-3px,2px);}
+    100%{transform:translate(0,0);}
+
+}
+
+/* ====================================== */
+/* DOOR GLOW */
+/* ====================================== */
+
+.door{
+
+    box-shadow:
+    0 0 15px rgba(255,255,255,.15),
+    0 0 35px rgba(0,170,255,.15),
+    0 15px 40px rgba(0,0,0,.45);
+
+}
