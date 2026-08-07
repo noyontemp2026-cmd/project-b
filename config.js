@@ -25,27 +25,23 @@ const CONFIG = {
 
 Hi {name}
 
-jani nh adow amr moner kotha bujhba ki nh bt ami sotti tmk onk vlo basi.prai 10hour + somoi diye banailm.
-just tmk impress korar jnno.tmr mon joy korar jnno.❤️ i love u {name}
-ami tmk onk happy rakhbo {name},
- tmk chara kisui vlo lge nh.always i think about you.
-
+kmnn achen medam.apnk nh ekta kotha bolr chilo.seta hocche i have fall in love with you..valobasi apnk onkkkkk
 `,
 noTexts:[
 
         "No 🙂",
 
-        "baggeee? 🤨",
+        "kireee? 🤨",
 
-        "kene emn korchi 🥺",
+        "kno emn korteso 🥺",
 
-        "nh koris nh 😜",
+        "nh korio nh 😜",
 
-        "plz he kor 😈",
+        "plz yes koro 😈",
 
-        "tahu nh tipchi 😂",
+        "taw na chapteso 😂",
 
-        "ja vag modon😆"
+        "jaw vago modon😆"
 
     ],
 
@@ -55,7 +51,7 @@ noTexts:[
 
             theme:"blue",
 
-            question:"sob sotti kotha kohobo kintu?",
+            question:"sob sotti kotha bolba kintu?",
 
             yesText:"Yes 💙",
 
@@ -63,7 +59,7 @@ noTexts:[
 
             popupTitle:"🤔",
 
-            popupMessage:"plz sotti koho."
+            popupMessage:"plz sotti bolo."
 
         },
 
@@ -87,7 +83,7 @@ noTexts:[
 
             theme:"pink",
 
-            question:"mok ki tor valo lge ni?",
+            question:"tmi ki single?",
 
             yesText:"lagiye ❤️",
 
@@ -95,7 +91,7 @@ noTexts:[
 
             popupTitle:"❤️",
 
-            popupMessage:"Please nh kohis nh."
+            popupMessage:"Please he bolio nh."
 
         },
 
@@ -119,7 +115,7 @@ noTexts:[
 
             theme:"red",
 
-            question:"mi tor monot jaiga koriu kina?",
+            question:"are bolo lojja paio nh?",
 
             yesText:"Ho korie❤️",
 
@@ -127,7 +123,7 @@ noTexts:[
 
             popupTitle:"💔",
 
-            popupMessage:"{name}, vlo ho kohochu"
+            popupMessage:"{name}, raji hoi jaw"
 
         },
 
@@ -135,7 +131,7 @@ noTexts:[
 
             theme:"yellow",
 
-            question:"ti mor lugu happy thakbo kina??",
+            question:"gf hoba ki nh??",
 
             yesText:"Ho thakim",
 
@@ -150,11 +146,11 @@ noTexts:[
 
             theme:"black",
 
-            question:"mor bow hobo kina??",
+            question:"bolo j yes i love u too??",
 
-            yesText:"Ho hom❤️",
+            yesText:"yes i love u❤️",
 
-            noText:"100% hom 😤",
+            noText:"100% love u 😤",
 
             popupTitle:"💔",
 
