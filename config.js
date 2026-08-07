@@ -85,7 +85,7 @@ noTexts:[
 
             question:"tmi ki single?",
 
-            yesText:"lagiye ❤️",
+            yesText:"he single ❤️",
 
             noText:"No 😅",
 
@@ -117,7 +117,7 @@ noTexts:[
 
             question:"are bolo lojja paio nh?",
 
-            yesText:"Ho korie❤️",
+            yesText:"basi to❤️",
 
             noText:"Na 😤",
 
@@ -133,7 +133,7 @@ noTexts:[
 
             question:"gf hoba ki nh??",
 
-            yesText:"Ho thakim",
+            yesText:"hobo",
 
             noText:"Na 😤",
 
